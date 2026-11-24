@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Scenario** | [Cairo: "Time for a Timer"](https://sadservers.com/scenario/cairo) |
-| **Difficulty** | DIFFICULTY_CAIRO |
+| **Difficulty** | Easy |
 | **Skills** | systemd timers, Nginx, curl, iptables / ip6tables |
 | **Date solved** | November 2026 |
 

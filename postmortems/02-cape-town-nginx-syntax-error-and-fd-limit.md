@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Scenario** | [Cape Town: "Borked Nginx"](https://sadservers.com/scenario/cape-town) |
+| **Scenario** | [Cape Town: "Borked Nginx"](https://sadservers.com/scenario/capetown) |
 | **Difficulty** | Medium |
 | **Skills** | Nginx, systemd unit files, resource limits |
 | **Date solved** | November 2026 |

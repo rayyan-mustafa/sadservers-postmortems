@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Scenario** | [Bergen: "Port already in use"](https://sadservers.com/scenario/bergen) |
-| **Difficulty** | DIFFICULTY_BERGEN |
+| **Difficulty** | Easy |
 | **Skills** | ss / lsof, systemd, Nginx reverse proxy |
 | **Date solved** | November 2026 |
 

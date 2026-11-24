@@ -8,11 +8,11 @@ Each entry is a short incident post-mortem: what was broken, the commands I ran 
 
 | # | Scenario | Difficulty | Skills | Write-up |
 |---|---|---|---|---|
-| 1 | Cairo: "Time for a Timer" | DIFFICULTY_CAIRO | systemd timers, Nginx, iptables | [Dormant timer + hidden firewall DROP rule](postmortems/01-cairo-systemd-timer-hidden-firewall-rule.md) |
+| 1 | Cairo: "Time for a Timer" | Easy | systemd timers, Nginx, iptables | [Dormant timer + hidden firewall DROP rule](postmortems/01-cairo-systemd-timer-hidden-firewall-rule.md) |
 | 2 | Cape Town: "Borked Nginx" | Medium | Nginx, systemd limits | [Syntax error, then 500s from a file-descriptor limit](postmortems/02-cape-town-nginx-syntax-error-and-fd-limit.md) |
 | 3 | Manhattan: "Can't write data into database" | Medium | PostgreSQL, disk, mounts | [Postgres down because its data disk was full](postmortems/03-manhattan-postgres-full-data-disk.md) |
-| 4 | Bergen: "Port already in use" | DIFFICULTY_BERGEN | ss / lsof, systemd, Nginx proxy | [Freeing a port without breaking the site using it](postmortems/04-bergen-port-conflict-behind-nginx.md) |
-| 5 | Alexandria | DIFFICULTY_ALEXANDRIA | cron, bash, lock files | [Silent backup failure: wrong script, no logs, stale lock](postmortems/05-alexandria-silent-cron-backup-stale-lock.md) |
+| 4 | Bergen: "Port already in use" | Easy | ss / lsof, systemd, Nginx proxy | [Freeing a port without breaking the site using it](postmortems/04-bergen-port-conflict-behind-nginx.md) |
+| 5 | Alexandria: "The Vanishing Backups" | Easy | cron, bash, lock files | [Silent backup failure: wrong script, no logs, stale lock](postmortems/05-alexandria-silent-cron-backup-stale-lock.md) |
 
 ## Patterns so far
 

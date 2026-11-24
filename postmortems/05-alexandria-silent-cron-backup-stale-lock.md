@@ -2,8 +2,8 @@
 
 | | |
 |---|---|
-| **Scenario** | [Alexandria](https://sadservers.com/scenario/alexandria) |
-| **Difficulty** | DIFFICULTY_ALEXANDRIA |
+| **Scenario** | [Alexandria: "The Vanishing Backups"](https://sadservers.com/scenario/alexandria) |
+| **Difficulty** | Easy |
 | **Skills** | cron, bash, lock files, logging |
 | **Date solved** | November 2026 |
 

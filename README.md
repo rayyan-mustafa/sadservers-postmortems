@@ -32,6 +32,6 @@ curl -v http://localhost                         # what a client actually sees
 
 ## How I work
 
-I solve each scenario live, against the clock, using an AI assistant the way I'd use a senior engineer sitting next to me: I run the commands and read the output, and ask for a hint when I'm stuck. These write-ups are my own reconstruction of the reasoning, including the parts I got wrong.
+I solve each scenario live, against the clock, then write up the reasoning, including the parts I got wrong.
 
 New entries follow [TEMPLATE.md](TEMPLATE.md).

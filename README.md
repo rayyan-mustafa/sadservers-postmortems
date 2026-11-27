@@ -13,12 +13,15 @@ Each entry is a short incident post-mortem: what was broken, the commands I ran 
 | 3 | Manhattan: "Can't write data into database" | Medium | PostgreSQL, disk, mounts | [Postgres down because its data disk was full](postmortems/03-manhattan-postgres-full-data-disk.md) |
 | 4 | Bergen: "Port already in use" | Easy | ss / lsof, systemd, Nginx proxy | [Freeing a port without breaking the site using it](postmortems/04-bergen-port-conflict-behind-nginx.md) |
 | 5 | Alexandria: "The Vanishing Backups" | Easy | cron, bash, lock files | [Silent backup failure: wrong script, no logs, stale lock](postmortems/05-alexandria-silent-cron-backup-stale-lock.md) |
+| 6 | Bern: Docker WordPress and MariaDB | Hard | Docker networking, container DNS | [Default bridge has no DNS by name, and the host was `mysql`](postmortems/06-bern-docker-default-bridge-no-dns.md) |
+| 7 | Jakarta: "It's always DNS" | Hard | nsswitch.conf, getent, systemd-resolved | [`hosts: files` with no `dns`, while resolv.conf looked fine](postmortems/07-jakarta-nsswitch-missing-dns.md) |
 
 ## Patterns so far
 
 - **Running is not working.** In Cape Town and Manhattan, the service looked "up" while every request failed. The service's own log told the truth.
 - **Two bugs at once is normal.** Cairo, Cape Town and Alexandria each had more than one fault. Fixing the first one is only halfway.
 - **Silence is the enemy.** A DROP rule (no "connection refused") and cron output sent to `/dev/null` both hid the problem. Good systems fail loudly.
+- **The healthy-looking part is often the red herring.** In Jakarta, `resolv.conf` and systemd-resolved were fine and the fault was in `nsswitch.conf`. In Bern the database was up and the fault was the network between the containers.
 
 ## My first five commands on a broken server
 
